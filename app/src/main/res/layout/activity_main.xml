@@ -10,7 +10,49 @@
     tools:context="com.example.j2deme.biblio.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/formTitle"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Nuevo Libro"
+        android:textAlignment="center"
+        android:textSize="35sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ilTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formTitle">
+
+        <EditText
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Titulo" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ilPaginas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ilTitulo">
+
+        <EditText
+            android:id="@+id/txtPaginas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Páginas" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ilAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ilPaginas">
+
+        <EditText
+            android:id="@+id/txtAutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Autor" />
+    </android.support.design.widget.TextInputLayout>
 </RelativeLayout>
