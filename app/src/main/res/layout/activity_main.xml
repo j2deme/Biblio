@@ -55,4 +55,16 @@
             android:layout_height="wrap_content"
             android:hint="Autor" />
     </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ilAutor"
+        android:layout_alignParentEnd="true"
+        android:text="Guardar"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ilAutor"
+        android:layout_alignParentStart="true"
+        android:text="Nuevo autor"/>
 </RelativeLayout>
