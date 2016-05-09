@@ -13,21 +13,19 @@
         android:id="@+id/formTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nuevo Libro"
-        android:textAlignment="center"
-        android:textSize="35sp" />
+        android:text="@string/nuevoLibroTitle"
+        style="@style/Titulo" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/ilTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/formTitle">
-
-        <EditText
-            android:id="@+id/txtTitulo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Titulo" />
+        <android.support.design.widget.TextInputEditText
+          android:id="@+id/txtTitulo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Titulo"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -36,11 +34,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/ilTitulo">
 
-        <EditText
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/txtPaginas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Páginas" />
+            android:hint="Páginas"
+            android:inputType="number" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -49,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/ilPaginas">
 
-        <EditText
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/txtAutor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,11 +59,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/ilAutor"
         android:layout_alignParentEnd="true"
+        android:theme="@style/MyButton"
         android:text="Guardar"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ilAutor"
         android:layout_alignParentStart="true"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:text="Nuevo autor"/>
 </RelativeLayout>
