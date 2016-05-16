@@ -60,6 +60,7 @@
         android:layout_below="@+id/ilAutor"
         android:layout_alignParentEnd="true"
         android:theme="@style/MyButton"
+        android:id="@+id/btnSaveLibro"
         android:text="Guardar"/>
     <Button
         android:layout_width="wrap_content"
@@ -67,5 +68,6 @@
         android:layout_below="@+id/ilAutor"
         android:layout_alignParentStart="true"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:id="@+id/btnNewAutor"
         android:text="Nuevo autor"/>
 </RelativeLayout>
